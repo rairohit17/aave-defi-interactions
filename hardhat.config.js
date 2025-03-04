@@ -22,6 +22,9 @@ module.exports = {
       forking:{
         url:process.env.MAINNET_INFURA_URL
       }
-    }
+    }, 
+    localhost: {
+      url: "http://127.0.0.1:8545", // Localhost network (automatically forks mainnet)
+    },
   }
 };

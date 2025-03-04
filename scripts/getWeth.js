@@ -2,7 +2,7 @@ const { ethers } = require("hardhat");
 const abi = require("../abi/Iweth.json");
 const wethAddress = "0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2"
 
-const amount = ethers.parseEther("20");
+const amount = BigInt("200000000000000000000")
 async function getWeth() {
 
     const [deployer] = await ethers.getSigners();
